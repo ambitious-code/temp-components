@@ -3,10 +3,7 @@
     <h1>Components</h1>
     <ul>
       <li>
-        <a href="/pages/sample-one">Sample number one</a>
-      </li>
-      <li>
-        <a href="/pages/sample-two">Sample number two</a>
+        <a href="/components/features">Features</a>
       </li>
     </ul>
   </div>
