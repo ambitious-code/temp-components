@@ -40,11 +40,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .selector {
-    opacity: 60%;
-    &:hover {
-      opacity: 100%;
-    }
+  section {
     button {
       &.active {
         background: var(--color-primary);
