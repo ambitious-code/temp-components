@@ -5,20 +5,6 @@
     transition: opacity 0.3s;
   }
 }
-.selector {
-  position: absolute;
-  top: 1rem;
-  right: 3rem;
-  opacity: 0.1;
-  transition: opacity 0.3s;
-  z-index: 1000;
-  span {
-    &.active {
-      background: var(--color-primary);
-      color: white;
-    }
-  }
-}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
