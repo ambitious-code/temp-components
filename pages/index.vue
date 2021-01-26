@@ -1,5 +1,11 @@
 <template>
   <div>
+    <h1>Sample pages</h1>
+    <ul>
+      <li>
+        <a href="/sample">Example one</a>
+      </li>
+    </ul>
     <h1>Components</h1>
     <ul>
       <li>
