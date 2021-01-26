@@ -2,14 +2,10 @@
   <div class="component-group">
     <section class="selector">
       <button @click="changeFeature('two')" class="bg-gray-200 p-2 rounded" :class="{active: activeFeature == 'two'}">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-        </svg>
+        <ViewBoards class="w-4"/>
       </button>
       <button @click="changeFeature('three')" class="bg-gray-200 p-2 rounded" :class="{active: activeFeature == 'three'}">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-        </svg>
+        <ViewGrid class="w-4"/>
       </button>
     </section>
     <FeaturesTwo v-if="activeFeature == 'two'" class="my-12"/>
@@ -20,11 +16,15 @@
 <script>
   import FeaturesTwo from '~/components/features/FeaturesTwo.vue'
   import FeaturesThree from '~/components/features/FeaturesThree.vue'
+  import ViewGrid from '~/components/icons/heroicons/ViewGrid.vue'
+  import ViewBoards from '~/components/icons/heroicons/ViewBoards.vue'
 
   export default {
-    components: { 
+    components: {
       FeaturesTwo,
-      FeaturesThree
+      FeaturesThree,
+      ViewBoards,
+      ViewGrid
     },
     data: function() {
       return {

@@ -2,14 +2,10 @@
   <div class="component-group">
     <section class="selector">
       <button @click="changeContact('one')" class="bg-gray-200 p-2 rounded" :class="{active: activeContact == 'one'}">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-        </svg>
+        <ViewBoards class="w-4" />
       </button>
       <button @click="changeContact('two')" class="bg-gray-200 p-2 rounded" :class="{active: activeContact == 'two'}">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-        </svg>
+        <ViewGrid class="w-4" />
       </button>
     </section>
       <ContactOne v-if="activeContact == 'one'" class="my-12"/>
@@ -18,12 +14,16 @@
 </template>
 
 <script>
-import ContactOne from '~/components/contact/ContactOne.vue'
-import ContactTwo from '~/components/contact/ContactTwo.vue'
+  import ContactOne from '~/components/contact/ContactOne.vue'
+  import ContactTwo from '~/components/contact/ContactTwo.vue'
+  import ViewBoards from '~/components/icons/heroicons/ViewBoards.vue'
+  import ViewGrid from '~/components/icons/heroicons/ViewGrid.vue'
   export default {
     components: {
       ContactOne,
-      ContactTwo
+      ContactTwo,
+      ViewBoards,
+      ViewGrid
     },
     data: function() {
       return {
@@ -39,4 +39,12 @@ import ContactTwo from '~/components/contact/ContactTwo.vue'
 </script>
 
 <style lang="scss" scoped>
+  section {
+    button {
+      &.active {
+        background: var(--color-primary);
+        color: white;
+      }
+    }
+  }
 </style>
