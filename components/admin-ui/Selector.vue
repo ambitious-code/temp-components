@@ -12,7 +12,7 @@
       </div>
       <div
         class="menu bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1 absolute right-0"
-        style="min-width: 6rem"
+        style="min-width: 8rem"
         v-show="state"
         @click.prevent="state = false"
       >
@@ -32,6 +32,16 @@
           <ViewGrid class="w-4 inline-block"/>
           Two
         </span>
+        <div
+          class="h-0 my-2 border border-solid border-t-0 border-gray-900 opacity-25"
+        >
+        </div>
+        <span
+          class="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap hover:bg-gray-200 cursor-pointer bg-transparent text-gray-800"
+        >
+          <Cog class="w-4 inline-block" />
+          Edit Styles
+        </span>
       </div>
     </div>
   </div>
@@ -41,12 +51,15 @@
   import ViewGrid from '~/components/icons/heroicons/ViewGrid.vue'
   import ViewBoards from '~/components/icons/heroicons/ViewBoards.vue'
   import Adjustments from '~/components/icons/heroicons/Adjustments.vue'
+  import Cog from '../icons/heroicons/Cog.vue'
+  
   export default {
     name: "Selector",
     components: {
       ViewBoards,
       ViewGrid,
-      Adjustments
+      Adjustments,
+      Cog
     },
     data: function() {
       return {
