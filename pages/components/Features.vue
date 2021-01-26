@@ -12,8 +12,8 @@
         </svg>
       </button>
     </section>
-    <FeaturesTwo v-if="activeFeature == 'two'"/>
-    <FeaturesThree v-if="activeFeature == 'three'"/>
+    <FeaturesTwo v-if="activeFeature == 'two'" class="my-12"/>
+    <FeaturesThree v-if="activeFeature == 'three'" class="my-12"/>
   </div>
 </template>
 
