@@ -1,26 +1,27 @@
 <template>
-  <div class="contact-wrapper">
-    <main class="contact-info">
-      <h2>Contact Us</h2>
-      <p>We want to hear from you! Reach out using one of the options below or send a message here.</p>
-      <div class="contact-details">
-        <div class="address">
-          1234 Acme Avenue <br/>
-          Portland, OR 97820
+  <div class="background">
+    <div class="contact-wrapper container mx-auto px-8 py-8">
+      <main class="contact-info">
+        <h2>Contact Us</h2>
+        <p>We want to hear from you! Reach out using one of the options below or send a message here.</p>
+        <div class="contact-details">
+          <div class="address">
+            1234 Acme Avenue <br/>
+            Portland, OR 97820
+          </div>
+          <div class="phone">
+            555-900-0987
+          </div>
         </div>
-        <div class="phone">
-          555-900-0987
+        <div class="signup">
+          <form action="">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Message">
+            <button>Submit</button>
+          </form>
         </div>
-      </div>
-      <div class="signup">
-        <form action="">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Message">
-          <button>Submit</button>
-        </form>
-      </div>
-    </main>
-    <img src="https://images.unsplash.com/photo-1611314601750-d9e27361fe95?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2604&q=80" alt="">
+      </main>
+    </div>
   </div>
 </template>
 
@@ -31,6 +32,10 @@
 </script>
 
 <style lang="scss" scoped>
+  .background {
+    background: url("https://images.unsplash.com/photo-1611314601750-d9e27361fe95?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2604&q=80") center center;
+    background-size: cover;
+  }
   .contact-wrapper {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -71,6 +76,9 @@
       }
     }
   }
+  .contact-info {
+    padding: 2rem;
+  }
   .address, .phone, .email {
     font-weight: 600;
     margin: 1rem 0;
@@ -79,9 +87,12 @@
   img {
     display: none;
     @media (min-width: 640px) {
+      position: absolute;
+      left: 50%;
+      right: 0;
       display: block;
       min-height: 100%;
-      border-radius: 0.25rem;
+      border-radius: 0;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
   }

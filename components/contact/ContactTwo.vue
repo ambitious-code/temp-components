@@ -1,21 +1,23 @@
 <template>
-    <div class="contact-wrapper">
+  <div class="background">
+    <div class="contact-wrapper container mx-auto px-8 py-16">
       <main class="contact-info">
-      <h2>Contact Us</h2>
-      <p>We want to hear from you! Reach out using one of the options below or send a message here.</p>
-      <div class="contact-details">
-        <div class="address">
-          1234 Acme Avenue<br/>
-          Portland, OR 97820
+        <h2>Contact Us</h2>
+        <p>We want to hear from you! Reach out using one of the options below or send a message here.</p>
+        <div class="contact-details">
+          <div class="address">
+            1234 Acme Avenue<br/>
+            Portland, OR 97820
+          </div>
+          <div class="phone">
+            555-900-0987
+          </div>
+          <div class="email">
+            <a href="#">support@companyname.com</a>
+          </div>
         </div>
-        <div class="phone">
-          555-900-0987
-        </div>
-        <div class="email">
-          <a href="#">support@companyname.com</a>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -28,6 +30,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .background {
+    background: var(--bg-secondary);
+  }
   .contact-wrapper {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -63,10 +68,13 @@
       border-radius: 0.25rem;
       border: 1px solid var(--color-tertiary);
     }
-    .address, .phone, .email {
-      font-weight: 600;
-      margin: 1rem 0;
-      font-size: 1.2em;
-    }
+  }
+  .contact-info {
+    padding: 2rem;
+  }
+  .address, .phone, .email {
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 1.2em;
   }
 </style>

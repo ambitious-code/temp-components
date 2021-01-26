@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto p-8">
+  <div>
     <Nuxt />
   </div>
 </template>

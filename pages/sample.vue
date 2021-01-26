@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Features class="my-32"/>
-    <Contact class="my-32"/>
+    <Features />
+    <Contact />
   </div>
 </template>
 

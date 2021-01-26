@@ -7,11 +7,12 @@
 }
 .selector {
   position: absolute;
-  top: -3rem;
-  right: 0rem;
+  top: 1rem;
+  right: 3rem;
   opacity: 0.1;
   transition: opacity 0.3s;
-  button {
+  z-index: 1000;
+  span {
     &.active {
       background: var(--color-primary);
       color: white;

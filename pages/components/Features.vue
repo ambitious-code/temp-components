@@ -1,43 +1,34 @@
 <template>
   <div class="component-group">
-    <section class="selector">
-      <button @click="changeFeature('two')" class="bg-gray-200 p-2 rounded" :class="{active: activeFeature == 'two'}">
-        <ViewBoards class="w-4"/>
-      </button>
-      <button @click="changeFeature('three')" class="bg-gray-200 p-2 rounded" :class="{active: activeFeature == 'three'}">
-        <ViewGrid class="w-4"/>
-      </button>
-    </section>
+    <Selector @selection="layoutSelection" />
     <transition name="fade" mode="out-in">
-      <FeaturesTwo v-if="activeFeature == 'two'" class="my-12"/>
-      <FeaturesThree v-if="activeFeature == 'three'" class="my-12"/>
+      <FeaturesOne v-if="activeLayout == 'one'" class="mt-12"/>
+      <FeaturesTwo v-if="activeLayout == 'two'" class="mt-12"/>
     </transition>
   </div>
 </template>
 
 <script>
   import FeaturesTwo from '~/components/features/FeaturesTwo.vue'
-  import FeaturesThree from '~/components/features/FeaturesThree.vue'
-  import ViewGrid from '~/components/icons/heroicons/ViewGrid.vue'
-  import ViewBoards from '~/components/icons/heroicons/ViewBoards.vue'
+  import FeaturesOne from '~/components/features/FeaturesOne.vue'
+  import Selector from '~/components/admin-ui/Selector.vue'
 
   export default {
     components: {
       FeaturesTwo,
-      FeaturesThree,
-      ViewBoards,
-      ViewGrid
+      FeaturesOne,
+      Selector
+    },
+    methods: {
+      layoutSelection(value) {
+        this.activeLayout = value
+      }
     },
     data: function() {
       return {
-        activeFeature: 'two',
+        activeLayout: 'one',
       }
     },
-    methods: {
-      changeFeature: function(value) {
-        this.activeFeature = value
-      }
-    }
   }
 </script>
 

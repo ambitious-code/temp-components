@@ -1,10 +1,8 @@
 <template>
   <div class="background">
-    <div class="feature-wrapper container mx-auto px-8 py-16">
-      <section class="text">
-        <h2>Source for Business</h2>
-        <p>A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
-      </section>
+    <div class="container mx-auto px-8 py-16">
+      <h2>Source for Business</h2>
+      <p>A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
       <dl>
         <div class="feature">
           <div class="icon">
@@ -61,7 +59,7 @@
   import Beaker from '~/components/icons/heroicons/Beaker.vue'
   import ChartSquareBar from '~/components/icons/heroicons/ChartSquareBar.vue'
   export default {
-    name: "FeaturesOne",
+    name: "FeaturesTwo",
     components: {
       Annotation,
       Adjustments,
@@ -75,42 +73,32 @@
   .background {
     background: var(--bg);
   }
-  .feature-wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    column-gap: 3rem;
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   h2 {
-    text-align: left;
+    text-align: center;
   }
   p {
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin: 0 auto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     @media (min-width: 640px) {
-      width: 100%;
+      width: 90%;
     }
     @media (min-width: 768px) {
-      width: 100%;
+      width: 70%;
     }
   }
   dl {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 3rem;
     column-gap: 2rem;
     row-gap: 2.5rem;
-    margin-top: 2rem;
     @media (min-width: 640px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-top: 0;
     }
     @media (min-width: 768px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-top: 0;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   dt {
@@ -122,16 +110,19 @@
     color: var(--color-tertiary);
   }
   .icon {
-    width: 2.5rem;
-    background: var(--color-primary);
-    border-radius: 0.25rem;
-    padding: 0.5rem;
+    width: 3.5rem;
     margin: 0;
-    color: var(--color-inverse);
+    color: var(--color-primary);
+    @media (min-width: 640px) {
+      margin: 0 auto;
+    }
   }
   .feature {
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     text-align: left;
+    @media (min-width: 640px) {
+      text-align: center;
+    }
   }
 </style>
