@@ -1,12 +1,13 @@
 import Vue from "vue";
 
 export const store = Vue.observable({
-    isNavOpen: true
+  // Is sidebar open
+  isNavOpen: false
 });
 
-// We call toggleNav anywhere we need it in our app
 export const mutations = {
-    toggleNav() {
-        store.isNavOpen = !store.isNavOpen
-    }
+  // We call toggleNav to open sidebar
+  toggleNav() {
+      store.isNavOpen = !store.isNavOpen
+  }
 };
