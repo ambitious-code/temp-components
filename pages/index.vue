@@ -5,6 +5,9 @@
       <li>
         <a href="/components/features">Features</a>
       </li>
+      <li>
+        <a href="/components/contact">Contact</a>
+      </li>
     </ul>
   </div>
 </template>
