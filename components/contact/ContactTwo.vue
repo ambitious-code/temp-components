@@ -1,6 +1,6 @@
 <template>
-  <div class="contact-wrapper">
-    <main class="contact-info">
+    <div class="contact-wrapper">
+      <main class="contact-info">
       <h2>Contact Us</h2>
       <p>We want to hear from you! Reach out using one of the options below or send a message here.</p>
       <div class="contact-details">

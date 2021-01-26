@@ -8,8 +8,10 @@
         <ViewGrid class="w-4" />
       </button>
     </section>
+    <transition name="fade" mode="out-in">
       <ContactOne v-if="activeContact == 'one'" class="my-12"/>
       <ContactTwo v-if="activeContact == 'two'" class="my-12"/>
+    </transition>
   </div>
 </template>
 

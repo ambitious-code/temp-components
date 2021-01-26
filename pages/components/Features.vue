@@ -8,8 +8,10 @@
         <ViewGrid class="w-4"/>
       </button>
     </section>
-    <FeaturesTwo v-if="activeFeature == 'two'" class="my-12"/>
-    <FeaturesThree v-if="activeFeature == 'three'" class="my-12"/>
+    <transition name="fade" mode="out-in">
+      <FeaturesTwo v-if="activeFeature == 'two'" class="my-12"/>
+      <FeaturesThree v-if="activeFeature == 'three'" class="my-12"/>
+    </transition>
   </div>
 </template>
 
