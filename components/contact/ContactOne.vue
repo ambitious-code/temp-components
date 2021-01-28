@@ -47,7 +47,7 @@
       background: var(--color-primary);
       color: var(--color-inverse);
       padding: 0.75rem;
-      border-radius: 0.25rem;
+      border-radius:var(--button-round);
       &:hover {
         background: var(--color-secondary);
       }
@@ -56,7 +56,7 @@
       padding: 0.75rem;
       margin: 0.25rem 0;
       width: 100%;
-      border-radius: 0.25rem;
+      border-radius: var(--round-sm);
       background: var(--bg);
       @media (min-width: 640px) {
         width: 90%;
@@ -71,6 +71,7 @@
     button {
       display: block;
       min-width: 100%;
+      border-radius: var(--round-sm);
       @media (min-width: 640px) {
         min-width: 6rem;
       }
@@ -92,7 +93,6 @@
       right: 0;
       display: block;
       min-height: 100%;
-      border-radius: 0;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
   }

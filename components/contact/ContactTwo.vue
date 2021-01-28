@@ -52,7 +52,7 @@
       background: var(--color-primary);
       color: var(--color-inverse);
       padding: 0.75rem;
-      border-radius: 0.25rem;
+      border-radius: var(--round-sm);
       border: 1px solid var(--color-primary);
       &:hover {
         background: var(--color-secondary);
@@ -65,8 +65,8 @@
     input {
       padding: 0.75rem;
       width: 40%;
-      border-radius: 0.25rem;
-      border: 1px solid var(--color-tertiary);
+      border-radius: var(--round-sm);
+      border: 1px solid var(--border);
     }
   }
   .contact-info {

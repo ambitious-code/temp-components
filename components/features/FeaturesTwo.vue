@@ -124,7 +124,7 @@
   .icon {
     width: 2.5rem;
     background: var(--color-primary);
-    border-radius: 0.25rem;
+    border-radius: var(--round-sm);
     padding: 0.5rem;
     margin: 0;
     color: var(--color-inverse);
