@@ -24,7 +24,7 @@
               <div class="ml-4 flex items-center md:ml-6">
                 <div class="ml-3 relative">
                   <div>
-                    <button class="cta max-w-xs rounded flex items-center text-sm font-bold text-white py-2 px-4">
+                    <button class="cta max-w-xs flex items-center py-2 px-4">
                       <span class="sr-only">Sign up</span>
                       Sign up
                     </button>
@@ -67,7 +67,7 @@
 
               <a href="#" class="px-4 py-3 w-auto">Company</a>
               <div class="mobile-cta px-4 py-4 w-full flex justify-center">
-                <button class="cta max-w-xs rounded flex items-center text-sm font-bold text-white py-2 px-4">
+                <button class="cta max-w-xs flex items-center py-2 px-4">
                   <span class="sr-only">Sign up</span>
                   Sign up
                 </button>
@@ -130,6 +130,10 @@
   .cta {
     background: var(--color-primary);
     border-radius: var(--round);
+    color: var(--color-inverse);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
     &:hover {
       background: var(--color-secondary);
     }

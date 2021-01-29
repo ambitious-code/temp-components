@@ -5,6 +5,11 @@
 </template>
 
 <style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 html {
   font-family:
     'Source Sans Pro',

@@ -73,7 +73,7 @@
 
 <style lang="scss" scoped>
   .background {
-    background: var(--bg);
+    background: var(--bg-secondary);
   }
   .feature-wrapper {
     display: grid;
@@ -90,7 +90,8 @@
     text-align: left;
     width: 100%;
     margin: 0 auto;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    color: var(--color);
     @media (min-width: 640px) {
       width: 100%;
     }

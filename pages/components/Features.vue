@@ -2,8 +2,8 @@
   <div class="component-group">
     <Selector @selection="layoutSelection" />
     <transition name="fade" mode="out-in">
-      <FeaturesOne v-if="activeLayout == 'one'" class="mt-12"/>
-      <FeaturesTwo v-if="activeLayout == 'two'" class="mt-12"/>
+      <FeaturesOne v-if="activeLayout == 'one'"/>
+      <FeaturesTwo v-if="activeLayout == 'two'"/>
     </transition>
   </div>
 </template>

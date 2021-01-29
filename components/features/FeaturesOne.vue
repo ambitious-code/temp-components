@@ -71,7 +71,7 @@
 
 <style lang="scss" scoped>
   .background {
-    background: var(--bg);
+    background: var(--bg-secondary);
   }
   h2 {
     text-align: center;
@@ -80,7 +80,8 @@
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: var(--color);
     @media (min-width: 640px) {
       width: 90%;
     }
@@ -103,7 +104,7 @@
   }
   dt {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0.5rem auto;
   }
   dd {

@@ -31,7 +31,7 @@
 
 <style lang="scss" scoped>
   .background {
-    background: var(--bg-secondary);
+    background: var(--bg);
   }
   .contact-wrapper {
     display: grid;

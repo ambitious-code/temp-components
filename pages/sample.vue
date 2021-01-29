@@ -2,7 +2,7 @@
   <div>
     <EditSidebar />
     <HeaderNav />
-    <Header />
+    <Hero />
     <Features />
     <Contact />
   </div>
@@ -10,7 +10,7 @@
 
 <script>
 import EditSidebar from '~/components/admin-ui/EditSidebar.vue'
-import Header from './components/Header.vue'
+import Hero from './components/Hero.vue'
 import Contact from './components/Contact.vue'
 import Features from './components/Features.vue'
 import HeaderNav from './components/HeaderNav.vue'
@@ -20,7 +20,7 @@ export default {
     Features,
     Contact,
     EditSidebar,
-    Header,
+    Hero,
     HeaderNav
   },
 }

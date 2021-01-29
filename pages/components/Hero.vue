@@ -2,22 +2,22 @@
   <div class="component-group">
     <Selector @selection="layoutSelection" />
     <transition name="fade" mode="out-in">
-      <HeaderOne v-if="activeLayout == 'one'" />
-      <HeaderTwo v-if="activeLayout == 'two'" />
+      <HeroOne v-if="activeLayout == 'one'" />
+      <HeroTwo v-if="activeLayout == 'two'" />
     </transition>
   </div>
 </template>
 
 <script>
-  import HeaderOne from '~/components/header/HeaderOne.vue'
-  import HeaderTwo from '~/components/header/HeaderTwo.vue'
+  import HeroOne from '~/components/hero/HeroOne.vue'
+  import HeroTwo from '~/components/hero/HeroTwo.vue'
   import Selector from '~/components/admin-ui/Selector.vue'
 
   export default {
-    name: "Header",
+    name: "Hero",
     components: {
-      HeaderOne,
-      HeaderTwo,
+      HeroOne,
+      HeroTwo,
       Selector
     },
     methods: {
