@@ -35,6 +35,10 @@
   .background {
     background: url("https://images.unsplash.com/photo-1611314601750-d9e27361fe95?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2604&q=80") center center;
     background-size: cover;
+    // Or solid color
+    // background: var(--bg);
+    // Or we could gradient
+    // background: radial-gradient(circle, rgba(44,82,130,1) 0%, rgba(0,96,255,1) 100%);
   }
   .contact-wrapper {
     display: grid;
