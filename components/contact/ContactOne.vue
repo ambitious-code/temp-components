@@ -1,6 +1,7 @@
 <template>
   <div class="background">
-    <div class="contact-wrapper container mx-auto px-8 py-8">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute top-0 width-full mt-n1-fluid" style="transform: scaleY(-1);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#f6f9fc"></path></svg>
+    <div class="contact-wrapper container mx-auto px-8 pt-12 pb-16">
       <main class="contact-info">
         <h2>Contact Us</h2>
         <p>We want to hear from you! Reach out using one of the options below or send a message here.</p>
@@ -15,8 +16,8 @@
         </div>
         <div class="signup">
           <form action="">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Message">
+            <input type="email" placeholder="Email" class="p-2 mb-2">
+            <input type="text" placeholder="Message" class="p-2 mb-2">
             <button>Submit</button>
           </form>
         </div>
@@ -33,12 +34,22 @@
 
 <style lang="scss" scoped>
   .background {
-    background: url("https://images.unsplash.com/photo-1611314601750-d9e27361fe95?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2604&q=80") center center;
-    background-size: cover;
-    // Or solid color
-    // background: var(--bg);
-    // Or we could gradient
+    // Use an image for the background
+    // background: url("/img/particle-bg.png") center center;
+    // background-size: cover;
+
+    // Or a solid color
+    background: var(--bg-dark);
+
+    // Or a gradient
     // background: radial-gradient(circle, rgba(44,82,130,1) 0%, rgba(0,96,255,1) 100%);
+  }
+  // Arc path at top of component
+  svg {
+    path {
+      // Fiil needs to match the bg of the component above
+      fill: var(--bg-secondary);
+    }
   }
   .contact-wrapper {
     display: grid;
@@ -57,8 +68,6 @@
       }
     }
     input {
-      padding: 0.75rem;
-      margin: 0.25rem 0;
       width: 100%;
       border-radius: var(--round-sm);
       background: var(--bg);
@@ -83,6 +92,7 @@
   }
   .contact-info {
     padding: 2rem;
+    color: var(--color-inverse);
   }
   .address, .phone, .email {
     font-weight: 600;

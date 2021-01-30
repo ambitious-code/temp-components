@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <div class="container mx-auto px-8 py-16">
+    <div class="container mx-auto px-8 py-24">
       <h2>Source for Business</h2>
       <p>A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
       <dl>
