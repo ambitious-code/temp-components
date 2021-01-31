@@ -18,9 +18,6 @@
               <li class="mt-2">
                 <a href="#">Link Here</a>
               </li>
-              <li class="mt-2">
-                <a href="#">Link Here</a>
-              </li>
             </ul>
           </section>
           <section class="w-1/2 lg:w-auto flex-auto mr-0 lg:mr-8 mt-12 lg:mt-0">
@@ -55,20 +52,11 @@
               <li class="mt-2">
                 <a href="#">Link Here</a>
               </li>
-              <li class="mt-2">
-                <a href="#">Link Here</a>
-              </li>
-              <li class="mt-2">
-                <a href="#">Link Here</a>
-              </li>
             </ul>
           </section>
           <section class="w-1/2 lg:w-auto flex-auto mr-0 lg:mr-8 mt-12 lg:mt-0">
             <h3>Legal</h3>
             <ul>
-              <li class="mt-2">
-                <a href="#">Link Here</a>
-              </li>
               <li class="mt-2">
                 <a href="#">Link Here</a>
               </li>

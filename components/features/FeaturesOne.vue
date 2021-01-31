@@ -1,7 +1,7 @@
 <template>
   <div class="background">
-    <div class="container mx-auto px-8 py-24">
-      <h2>Source for Business</h2>
+    <div class="container mx-auto px-8 py-32">
+      <h2 class="leading-none">All the best reasons to say "yes"</h2>
       <p>A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose.</p>
       <dl>
         <div class="feature">
@@ -108,7 +108,7 @@
     margin: 0.5rem auto;
   }
   dd {
-    color: var(--color-tertiary);
+    color: var(--color);
   }
   .icon {
     width: 3.5rem;

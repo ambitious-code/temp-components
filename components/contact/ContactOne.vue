@@ -48,7 +48,7 @@
   svg {
     path {
       // Fiil needs to match the bg of the component above
-      fill: var(--bg-secondary);
+      fill: var(--bg);
     }
   }
   .contact-wrapper {
