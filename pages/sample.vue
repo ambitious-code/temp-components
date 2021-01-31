@@ -5,6 +5,7 @@
     <Hero />
     <Features />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Hero from './components/Hero.vue'
 import Contact from './components/Contact.vue'
 import Features from './components/Features.vue'
 import HeaderNav from './components/HeaderNav.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   components: { 
@@ -21,7 +23,8 @@ export default {
     Contact,
     EditSidebar,
     Hero,
-    HeaderNav
+    HeaderNav,
+    Footer
   },
 }
   </script>
