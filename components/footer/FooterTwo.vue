@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <div class="container mx-auto px-8 py-16">
+    <div class="container mx-auto px-8 pt-0 lg:pt-16 pb-6 lg:pb-16">
       <footer class="flex flex-col lg:flex-row">
         <div class="flex flex-auto flex-wrap lg:flex-no-wrap">
           <section class="w-1/2 lg:w-auto flex-auto mr-0 lg:mr-8 mt-12 lg:mt-0">
@@ -85,7 +85,7 @@
       </footer>
       <section class="footnote flex flex-row mt-8 pt-8 lg:mt-16 lg:pt-16 w-full justify-items-stretch">
         <div class="flex-1">
-          <p>© 2021 Source. All rights reserved.</p>
+          <p class="leading-none">© 2021 Source. All rights reserved.</p>
         </div>
         <div class="social-icons flex flex-row flex-1 justify-end">
           <a href="#" class="ml-4">
