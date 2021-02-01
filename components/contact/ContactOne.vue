@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute top-0 width-full mt-n1-fluid" style="transform: scaleY(-1);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#f6f9fc"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute top-0 width-full mt-n1-fluid" style="transform: scaleY(-2);"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#f6f9fc"></path></svg>
     <div class="contact-wrapper container mx-auto px-8 pt-12 pb-16">
       <main class="contact-info">
         <h2>Contact Us</h2>
