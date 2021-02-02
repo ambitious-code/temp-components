@@ -1,13 +1,13 @@
 <template>
   <div class="background">
     <div class="container mx-auto px-8 pt-20 mb-12">
-      <section class="text-center w-full lg:w-3/4 mx-auto">
+      <section class="text-center w-full lg:w-3/5 mx-auto">
         <h2 class="leading-none">Loved by almost everyone</h2>
         <p>We've asked our favorite users to tell us kind things. Those are below. We decided to throw away the bad things.</p>
       </section>
     </div>
     <div class="grid grid-flow-col grid-cols-7 pb-20">
-      <div class="scroll flex flex-row col-span-full gap-x-8 py-12 px-6 overflow-x-auto overflow-y-visible overscroll-x-none">
+      <div class="no-scrollbar flex flex-row col-span-full gap-x-8 py-12 px-6 overflow-x-auto overflow-y-visible overscroll-x-none">
         <article class="pt-12 pb-8 px-10 relative shadow-lg min-h-64">
           <div class="w-12 h-12 overflow-hidden absolute top-0 rounded-full inset-x-0 mx-auto -mt-3 shadow-md">
             <img src="/img/testimonials/slack.png" alt="" class="min-w-full min-h-full object-cover">
@@ -38,7 +38,7 @@
             <div class="flex-grow">
               <p class="w-64">“You're gonna need a bigger boat.”</p>
             </div>
-            <div class="attribute mt-4">One Armed Willie</div>
+            <div class="attribute mt-4">One Armed Willie, Fisherman</div>
           </div>
         </article>
         <article class="pt-12 pb-8 px-10 relative shadow-lg min-h-64">
@@ -87,11 +87,11 @@
         </article>
         <article class="pt-12 pb-8 px-10 relative shadow-lg min-h-64">
           <div class="w-12 h-12 overflow-hidden absolute top-0 rounded-full inset-x-0 mx-auto -mt-3 shadow-md">
-            <img src="/img/testimonials/slack.png" alt="" class="min-w-full min-h-full object-cover">
+            <img src="/img/testimonials/github.png" alt="" class="min-w-full min-h-full object-cover">
           </div>
           <div class="flex flex-col h-full">
             <div class="flex-grow">
-              <p class="w-64">"You're a real cool customer on the court, real chill out there, can't be rattled in your game"</p>
+              <p class="w-64">"You're a real cool customer on the court, real chill out there, can't be rattled in your game."</p>
             </div>
             <div class="attribute mt-4">Sidney Deane, Baller</div>
           </div>
@@ -111,7 +111,7 @@
   .background {
     background: var(--bg);
   }
-  .scroll {
+  .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
     &::-webkit-scrollbar {
