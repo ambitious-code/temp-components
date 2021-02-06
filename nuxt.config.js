@@ -20,10 +20,16 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/colors.css',
-    '@/assets/forms.css',
-    '@/assets/type.scss',
-    '@/assets/app-ui.scss'
+    //User-selected styles
+    '@/assets/am_user-colors.scss',
+    //Component styles
+    '@/assets/am_global.scss',
+    '@/assets/am_forms.scss',
+    '@/assets/am_type.scss',
+    '@/assets/am_shadows.scss',
+    '@/assets/am_testimonials.scss',
+    // App UI
+    '@/assets/am_app-ui.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
