@@ -1,15 +1,15 @@
 <template>
-  <div class="background">
-    <div class="container mx-auto px-8 pt-20 mb-12">
-      <section class="text-center w-full lg:w-3/5 mx-auto">
-        <h2 class="leading-none">Loved by almost everyone</h2>
+  <div class="am__background">
+    <div class="am__container">
+      <section>
+        <h2>Loved by almost everyone</h2>
         <p>We've asked our favorite users to tell us kind things. Those are below. We decided to throw away the bad things.</p>
       </section>
-      <div class="flex flex-row flex-wrap gap-x-8 gap-y-8 py-12 px-6">
-        <article class="flex card py-8 px-10 relative shadow-lg min-h-64">
-          <div class="flex flex-col h-full">
-            <div class="flex-grow">
-              <p class="w-auto">"It happens sometimes. Friends come in and out of our lives, like busboys in a restaurant."</p>
+      <div class="am__testimonial-wrapper">
+        <article>
+          <div class="am__testimonial-content">
+            <div class="am__testimonial-quote">
+              <p>"It happens sometimes. Friends come in and out of our lives, like busboys in a restaurant."</p>
             </div>
             <div class="flex flex-row mt-6">
               <div class="w-12 h-12 inline-block overflow-hidden rounded-full shadow-md">
@@ -179,16 +179,50 @@
 </script>
 
 <style lang="scss" scoped>
-  .background {
+  .am__background {
     background: var(--bg);
   }
+  .am__container {
+    padding: 5rem 2rem 0;
+    margin-bottom: 3rem;
+  }
+  section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      width: 60%;
+    }
+  }
+  .am__testimonial-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 3rem 1.5rem;
+  }
   article {
+    position: relative;
+    display: flex;
+    flex: 1 1 calc(33.3% - 2rem);
+    padding: 3rem 2.5rem 2rem;
+    min-height: 16rem;
     border-radius: var(--round-sm);
     background: var(--bg-secondary);
     color: var(--color);
+    box-shadow: var(--shadow-lg);
   }
-  .card {
-    flex: 1 1 calc(33.3% - 2rem);
+  .am__testimonial-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .am__testimonial-quote {
+    flex-grow: 1;
+    p {
+      width: auto;
+    }
   }
   .attribute {
     font-weight: 700;
